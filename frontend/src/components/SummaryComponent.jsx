@@ -26,8 +26,7 @@ export default function SummaryComponent() {
     try {
       const res = await fetch(`${API_BASE}/summary/${session}`);
       const data = await res.json();
-      if(data.summary=='No summary found.'){setSummary("Upload a document!! \n Wait for a minute");}
-      else{setSummary(data.summary || "Upload a document!! \n Wait for a minute");}
+      setSummary(data.summary || "Upload a document!! \n Wait for a minute");
     } finally {
       setLoading(false);
     }
@@ -45,4 +44,5 @@ export default function SummaryComponent() {
     </div>
   );
 }
+
 
