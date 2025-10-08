@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import Markdown from "react-markdown";
 import { useParams } from "react-router";
 
-const API_BASE = "https://teachers-toolkit-ai-backend-latest.onrender.com";
+const API_BASE = "https://hackathon-extension.onrender.com";
 // const API_BASE ="http://localhost:5000"
 
 const colors = {
@@ -132,3 +132,4 @@ const btnStyle = (bg) => ({
 // }
 
 // export default RagChat
+
