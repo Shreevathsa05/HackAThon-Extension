@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router";
 import Markdown from 'react-markdown'
 
-const API_BASE = "https://teachers-toolkit-ai-backend-latest.onrender.com";
+const API_BASE = "https://hackathon-extension.onrender.com";
 const colors = {
   teal: "#006D77",
   mint: "#83C5BE",
@@ -45,3 +45,4 @@ export default function SummaryComponent() {
     </div>
   );
 }
+
