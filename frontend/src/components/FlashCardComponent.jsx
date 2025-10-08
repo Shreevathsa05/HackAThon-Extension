@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router";
 
-const API_BASE = "https://teachers-toolkit-ai-backend-latest.onrender.com";
+const API_BASE = "https://hackathon-extension.onrender.com";
 const colors = {
   teal: "#006D77",
   mint: "#83C5BE",
@@ -230,3 +230,4 @@ const btnStyle = (bg) => ({
 //   background: bg, border: "none", padding: "8px 12px",
 //   borderRadius: 8, cursor: "pointer", color: "#fff", fontWeight: 600
 // });
+
