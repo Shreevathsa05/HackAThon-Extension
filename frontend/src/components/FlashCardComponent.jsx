@@ -30,7 +30,7 @@ export default function FlashCardComponent() {
       const res = await fetch(`${API_BASE}/flashcards/${session}`);
       if (!res.ok) throw new Error("Upload a valid pdf\n Wait a minute");
       const data = await res.json();
-      setCards(data.flashcards || []);
+      setCards(data.cards || []);
       setIndex(0);
       setFlipped(false);
     } catch (err) {
@@ -230,4 +230,5 @@ const btnStyle = (bg) => ({
 //   background: bg, border: "none", padding: "8px 12px",
 //   borderRadius: 8, cursor: "pointer", color: "#fff", fontWeight: 600
 // });
+
 
